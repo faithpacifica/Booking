@@ -8,13 +8,12 @@ const Home = () => {
   return (
     <div className="home_page">
       <div className = 'container'>
-        <Header /> 
-        {/* TODO:App.js ga Header va Footerni utkazish */}
+        
         <Intro />
         <Navbar />
         <PopularDestinations />
         <ExploreMore />
-        <Footer />
+      
       </div>
     </div>
   );

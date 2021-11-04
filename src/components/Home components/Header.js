@@ -17,7 +17,7 @@ const Header = () => {
         <div className="authentification">
             <button type='button'>?</button>
           <Link to="/register">Register</Link>
-          <Link to="/sign_in">Sign In</Link>
+          <Link to="/sign-in">Sign In</Link>
         </div>
       </div>
     </div>
