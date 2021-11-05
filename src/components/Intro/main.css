@@ -1,0 +1,37 @@
+
+/* intro */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+    background-color: aquamarine;
+    align-items: center;
+}
+.intro-input{
+    padding:20px;
+    width: 600px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size: 16px;
+
+}
+.weather__component {
+
+    background-color: rgba(238, 237, 237, 0.33);
+    color: rgb(105, 104, 104);
+    font-family: sans-serif;
+    width:300px;
+    text-align: center;
+    border-radius:12px;
+    margin:20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.column4{
+    margin:20px;
+}
+

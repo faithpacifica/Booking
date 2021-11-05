@@ -1,18 +1,18 @@
 import React from "react";
 import WeatherWidget from "./WeatherWidget";
+import "./main.css";
+
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <section className="intro">
       <div className="container intro__container">
-        This is Intro component
-        <input type="text" placeholder="Where To?" />
+        <input className="intro-input" type="text" placeholder="Where To?" />
       </div>
-
       <div className="weather_widget">
         <WeatherWidget />
       </div>
-    </div>
+    </section>
   );
 };
 
