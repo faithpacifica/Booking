@@ -1,4 +1,5 @@
 import React from "react";
+import PopularDestinationCard from './PopularDestinationsCard'
 
 const PopularDestinations = () => {
   return (
