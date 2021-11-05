@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherApp from './WeatherApp';
+import WeatherApp from './WeatherWidget';
 
 const Intro = () => {
     return (
@@ -9,7 +9,7 @@ const Intro = () => {
                 <input type="text" placeholder='Where To?' /> 
             </div>
            
-            <div className='weather_app'><WeatherApp /></div>
+            <div className='weather_app'><WeatherWidget /></div>
         </div>
     );
 };

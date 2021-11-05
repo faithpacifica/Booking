@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WeatherApp = () => {
+const WeatherWidget = () => {
     return (
         <div className = 'weather__component'>
             This is Weather Widget
@@ -8,4 +8,4 @@ const WeatherApp = () => {
     );
 };
 
-export default WeatherApp;
+export default WeatherWidget;
