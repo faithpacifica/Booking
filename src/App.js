@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from './components/Home components/Header'
-import Footer from "./components/Home components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import MyTrips from "./pages/MyTrips";
 import Home from "./pages/Home";
-import Register from './pages/Register';
-import Restaurants from './pages/Restaurants';
-import Review from './pages/Review';
-import SignIn from './pages/SignIn';
-import ThingsToDo from './pages/ThingsToDo';
-import NotFound from './pages/NotFound';
+import Register from "./pages/Register";
+import Restaurants from "./pages/Restaurants";
+import Review from "./pages/Review";
+import SignIn from "./pages/SignIn";
+import ThingsToDo from "./pages/ThingsToDo";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -17,37 +17,21 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route path="/" element={<Home />} />
 
-          <Route path="/my-trips">
-            <MyTrips />
-          </Route>
+          <Route path="/my-trips" element={<MyTrips />} />
 
-          <Route path="/register">
-            <Register />
-          </Route>
+          <Route path="/register" element={<Register />} />
 
-          <Route path="/restaurants">
-            <Restaurants />
-          </Route>
+          <Route path="/restaurants" element={<Restaurants />} />
 
-          <Route path="/review">
-            <Review />
-          </Route>
+          <Route path="/review" element={<Review />} />
 
-          <Route path="/sign-in">
-            <SignIn />
-          </Route>
+          <Route path="/sign-in" element={<SignIn />} />
 
-          <Route path="/things">
-            <ThingsToDo />
-          </Route>
+          <Route path="/things" element={<ThingsToDo />} />
 
-          <Route path="*">
-            <NotFound />
-          </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

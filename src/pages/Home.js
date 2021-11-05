@@ -1,8 +1,8 @@
 import React from "react";
-import Intro from "../components/Home components/Intro";
-import ExploreMore from "../components/Home components/ExploreMore";
-import Navbar from '../components/Home components/Navbar';
-import PopularDestinations from '../components/Home components/PopularDestinations';
+import Intro from "../components/Intro/Intro";
+import ExploreMore from "../components/ExploreMore/ExploreMore";
+import Navbar from '../components/Navbar/Navbar';
+import PopularDestinations from '../components/PopularDestinations/PopularDestinations';
 
 
 const Home = () => {
