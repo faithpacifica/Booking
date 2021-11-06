@@ -8,6 +8,7 @@ const Footer = () => {
                <div className ='site_footer__inner_wrapper'>
                     <div className= 'about_us'>
                         <div><a >About Us</a></div>
+                        {/* TODO: Link qanday yoziladi? */}
                         <div><a >Advertising</a></div>
                     </div>
 

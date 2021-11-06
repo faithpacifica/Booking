@@ -8,14 +8,14 @@ import PopularDestinations from '../components/PopularDestinations/PopularDestin
 const Home = () => {
   return (
     <div className="home_page">
-      <div className = 'container'>
+
         
         <Intro />
         <Navbar />
         <PopularDestinations />
         <ExploreMore />
       
-      </div>
+     
     </div>
   );
 };
