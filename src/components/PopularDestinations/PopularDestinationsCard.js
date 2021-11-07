@@ -11,7 +11,7 @@ const PopularDestinationsCard = () => {
                 <div className='popular_destinations_card_city'>Tulum, Mexico</div>
             </div>
         </Link>
-        {/* Pastdagilari kerak emas */}
+        {/* Pastdagilari kerak emas  keyinroq swiper qushish*/}
         <Link className='popular_destinations_card_link' to = '/city:id'>
             <div className='popular_card_wrapper'>
                 <img className='popular_destinations_card_img' src="/../img/popular-place2.jpg" alt="" width="272" height="272"/>

@@ -19,3 +19,8 @@
     line-height: 22px;
     color: #333;
 }
+
+.explore_more__inner_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
