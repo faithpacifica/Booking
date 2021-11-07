@@ -1,0 +1,79 @@
+.site-navbar {
+    margin-top: -30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}  
+
+.site-navbar-list {
+    padding-top: 20px;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 6px 2px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.site-navbar-item {
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-top: 10px;
+    width: 140px;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s border-bottom ease-in-out;
+}
+
+.site-navbar-item:hover {
+    border-bottom: 4px rgb(83, 146, 249) solid;
+}
+
+.site-navbar-link {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.site-navbar-text {
+    color: rgb(42, 42, 46);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.fas, .far{
+    display: block;
+    font-size:26px;
+    font-size:26px;
+    color:rgb(75, 79, 86);
+    margin-bottom: 5px;
+}
