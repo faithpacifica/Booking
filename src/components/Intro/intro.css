@@ -1,0 +1,20 @@
+
+/* intro */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+    background-color:burlywood;
+    /* TODO: chiqmayapti */
+    align-items: center;
+}
+.intro-input{
+    padding:20px;
+    width: 600px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size: 16px;
+
+}
+
