@@ -27,7 +27,9 @@ const PopularDestinationsCard = () => {
         <Link className='popular_destinations_card_link' to = '/city:id'>
             <div className='popular_card_wrapper'>
                 <img className='popular_destinations_card_img' src="/../img/popular-place4.jpg" alt="" width="272" height="272"/>
-                <div className='popular_destinations_card_city'>Hawaii</div> {/*TODO:shrift aniq kurinmayapti*/}
+                <div className='popular_destinations_card_city'>
+                    <h3 className='popular_destinations_card_city'>Hawaii</h3>
+                </div> 
             </div>
         </Link>
         
