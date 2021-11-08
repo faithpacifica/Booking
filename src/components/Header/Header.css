@@ -1,0 +1,6 @@
+.site__header{
+    background-color: #003580; 
+}
+.site__header__container{
+    display: flex;
+}
