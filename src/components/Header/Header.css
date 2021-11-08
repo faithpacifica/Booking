@@ -17,7 +17,7 @@
     display: flex;
 }
 .blog_pages{
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .blog_pages__review,.auth__registration{
     margin-right: 20px;
@@ -26,8 +26,8 @@
     font-weight: 500;
     color: #fff;
 }
-.language{
-    margin-left: 20px;
+.currency{
+    margin-right: 20px;
 }
 .language,.currency{
     color: #fff;
@@ -40,4 +40,8 @@
     height: 24px;
     border-radius: 50%;
     background-color: #f2f2f2;
+}
+.auth__registration,.auth__sign-in{
+    padding: 8px;
+border: 2px solid #fff;
 }

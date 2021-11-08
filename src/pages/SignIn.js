@@ -1,10 +1,11 @@
 import React from 'react';
+import './SignIn.css';
 
 const SignIn = () => {
     return (
-        <div className = 'sign-in__page'>
+        <div className = 'signIn-page'>
             <div className ='container'>
-                  Sign In page 
+                  
             </div>
         </div>
     );

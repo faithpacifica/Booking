@@ -23,16 +23,14 @@ const Header = () => {
 
         <div className="site-header__subgroup">
           <div className="blog_pages">
-            <Link className="blog_pages__review site-header-link" to='/review'>Review</Link>
-            <Link className="blog_pages__my_trips site-header-link"to='/my-trips'>Trips</Link>
+            <Link className="blog_pages__review site-header-link" to='/review'><i class="fas fa-pen"></i>Review</Link>
+            <Link className="blog_pages__my_trips site-header-link"to='/my-trips'><i class="far fa-heart"></i>Trips</Link>
           </div>
-
           <div className="auth">
             <Link className="auth__registration site-header-link" to="/register">Register</Link>
             <Link className="auth__sign-in site-header-link"  to="/sign-in">Sign In</Link>
           </div>
         </div>
-
       </div>
     </header>
   );

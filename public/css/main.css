@@ -50,4 +50,9 @@ html{
     background-position: center center;
     background-size: cover;
   }
+  .signIn-page{
+    background-image: url(../img/sign-in-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
