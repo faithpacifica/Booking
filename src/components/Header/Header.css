@@ -1,6 +1,6 @@
 .site__header{
     background-color: #003580; 
-    padding: 10px 0;
+    padding: 15px 0;
 }
 .site__header__container{
     display: flex;
@@ -27,6 +27,7 @@
     color: #fff;
 }
 .currency{
+    font-size: 18px;
     margin-right: 20px;
 }
 .language,.currency{
@@ -43,5 +44,5 @@
 }
 .auth__registration,.auth__sign-in{
     padding: 8px;
-border: 2px solid #fff;
+    border: 2px solid #fff;
 }
