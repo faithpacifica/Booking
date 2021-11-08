@@ -27,8 +27,10 @@
     margin:0;
     font-size: 28px;
     font-weight: 500;
+    color:rgb(3, 82, 27);
 }
 .weather-descrip{
     font-size: 18px;
     font-weight: 500;
+    color:rgb(4, 56, 17)
 }

@@ -4,7 +4,7 @@
 .intro{
     display: flex;
     justify-content: space-between;
-    padding:40px;
+    padding:40px 0;
     /* background-color:burlywood; */
     /* TODO: chiqmayapti */
     align-items: center;
