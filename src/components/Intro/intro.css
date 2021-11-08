@@ -1,20 +1,27 @@
 
 /* intro */
 
-.intro{
+.intro__container{
     display: flex;
     justify-content: space-between;
     padding:40px 0;
-    /* background-color:burlywood; */
-    /* TODO: chiqmayapti */
     align-items: center;
+    margin-top:30px;
 }
-.intro-input{
+.intro__input{
+    width: 100%;
     padding:20px;
-    width: 600px;
     border-radius:30px;
     border:1px solid #ccc;
     font-size: 16px;
 
 }
-
+.intro__search{
+    position: relative;
+    width: 70%;
+}
+.intro__icon{
+    top:17px;
+    right:23px;
+    position: absolute;
+}

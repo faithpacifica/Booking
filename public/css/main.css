@@ -45,9 +45,9 @@ html{
     margin-right: auto;
   }
   .intro{
-    background-image: url(../img/popular-place2.jpg);
+    background-image: url(../img/intro-bg.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
   }
   

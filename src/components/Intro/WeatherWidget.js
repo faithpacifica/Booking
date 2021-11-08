@@ -26,7 +26,7 @@ const WeatherWidget = () => {
     return (
         
         <div className = 'weather__component'>
-               <input className="weather-input" type="text" placeholder="Enter City?" 
+               <input className="weather__input" type="text" placeholder="Enter City?" 
                onChange={e=> setCity(e.target.value)} value={city} onKeyPress={getWeather} />
                {typeof weatherData.main === 'undefined' ? (
                    <div>
@@ -35,15 +35,15 @@ const WeatherWidget = () => {
                ): (
                
                  <div class="column4">
-                <div class="weather-card"> <span class="icon"><img class="weather-img" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
+                <div class="weather__card"> <span class="icon"><img class="weather__img" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
                      <div className="row"> 
-                     <div class="weather-title">  
-                      <p className="weather-name">{weatherData.name}</p>
-                     <div class="weather-temp">{Math.round(weatherData.main.temp)}<sup>&deg;</sup></div>
+                     <div class="weather__title">  
+                      <p className="weather__name">{weatherData.name}</p>
+                     <div class="weather__temp">{Math.round(weatherData.main.temp)}<sup>&deg;</sup></div>
                     </div>
                         <div class="column4">
-                            <div class="weather-descrip">General</div>
-                            <div class="value">{weatherData.weather[0].main}</div>
+                            <div class="weather__descrip">General</div>
+                            <div class="weather__value">{weatherData.weather[0].main}</div>
                         </div>
 
                         {/* <div class="column4">

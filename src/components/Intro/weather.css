@@ -6,7 +6,7 @@
     width:300px;
     text-align: center;
     border-radius:12px;
-    margin:20px;
+   
 
 }
 .row{
@@ -17,19 +17,19 @@
 .column4{
     margin:20px;
 }
-.weather-input{
+.weather__input{
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid;
 }
-.weather-name{
+.weather__name{
     margin:0;
     font-size: 28px;
     font-weight: 500;
     color:rgb(3, 82, 27);
 }
-.weather-descrip{
+.weather__descrip{
     font-size: 18px;
     font-weight: 500;
     color:rgb(4, 56, 17)

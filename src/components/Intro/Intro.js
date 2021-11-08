@@ -12,12 +12,14 @@ const Intro = () => {
  
     <section className="intro">
       <div className="container intro__container">
-        <input className="intro-input" type="text" placeholder="Where To?" />
-      
-      </div>
-      <div className="weather_widget">
+        <div className="intro__search">
+        <input className="intro__input" type="text" placeholder="Where To?" /><i class="fas fa-search intro__icon"></i>
+        </div>
+       <div className="weather__widget">
         <WeatherWidget />
       </div>
+      </div>
+     
     </section>
   );
 };
