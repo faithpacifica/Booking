@@ -34,11 +34,11 @@
     color: white;
     letter-spacing: .02em;
     position: absolute;
-    padding: 0px 10px 10px;
+    padding: 0px 15px 10px;
     z-index: 40;
     bottom:0px;
     right: 0;
     left: 0;
-    font-weight: bold;
+    font-weight: 900;
   
 }
