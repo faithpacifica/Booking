@@ -6,6 +6,7 @@
     width:300px;
     text-align: center;
     border-radius:12px;
+    min-height: 300px;
    
 
 }
@@ -25,12 +26,22 @@
 }
 .weather__name{
     margin:0;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     color:rgb(3, 82, 27);
 }
 .weather__descrip{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
-    color:rgb(4, 56, 17)
+    color:rgb(3, 82, 27);
+}
+.weather__temp{
+    font-size: 22px;
+    font-weight: 400;
+    color:rgb(3, 82, 27);
+}
+.weather__location-img{
+    width: 24px;
+    margin:0 5px;
+
 }
