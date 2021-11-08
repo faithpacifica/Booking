@@ -1,13 +1,13 @@
 import React from 'react';
 import "./weather.css";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 const WeatherWidget = () => {
     const Weatherapi = `4497860ea86e515850b9a3269d67f6b0`;
     const [weatherData, setWeatherData] = useState([{}]);
     const [city, setCity] = useState("");
-   
-   
+    const [img, setImg] = useState("");
+
     const getWeather = (event) =>{
         if (event.key == "Enter"){
           fetch (`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Weatherapi}`).then
@@ -15,12 +15,16 @@ const WeatherWidget = () => {
           ).then (data =>{ 
             //   console.log(Window.navigatior.geolocation)
             setWeatherData(data);
-            setCity("")
+            setCity("")  ;
+            setImg("");
+            
+            
           }
           
           )  
         }
       }
+     
 
 
     return (
@@ -35,7 +39,7 @@ const WeatherWidget = () => {
                ): (
                
                  <div class="column4">
-                <div class="weather__card"> <span class="icon"><img class="weather__img" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
+                <div class="weather__card"> <span class="icon"><img class="weather__img"   src={weatherData.main.icon}  /></span>
                      <div className="row"> 
                      <div class="weather__title">  
                       <p className="weather__name">{weatherData.name}<img className="weather__location-img" src="img/Locationred.png"/></p>
