@@ -1,6 +1,6 @@
 import React from 'react';
 import RestaurantCard from './RestaurantCard';
-import styled, { css } from 'styled-components';
+// import styled from 'styled-components';
 import './ExploreMore.css'
 
 const ExploreMore = () => {
