@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CityCard = () => {
     return (
         <Link to='/city'>
-            <div className='restaurant_card'>
+            <div className='restaurant-card'>
                 City Card Component
             </div>
         </Link>

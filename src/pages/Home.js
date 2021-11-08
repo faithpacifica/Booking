@@ -1,6 +1,6 @@
 import React from "react";
 import Intro from "../components/Intro/Intro";
-import ExploreMore from "../components/ExploreMore/ExploreMore";
+import Accomodation from "../components/HomeAccomodation/Accomodation";
 import Navbar from '../components/Navbar/Navbar';
 import PopularDestinations from '../components/PopularDestinations/PopularDestinations';
 import './Home.css';
@@ -13,7 +13,7 @@ const Home = () => {
         <Intro />
         <Navbar />
         <PopularDestinations />
-        <ExploreMore />
+        <Accomodation />
       
      
     </div>
