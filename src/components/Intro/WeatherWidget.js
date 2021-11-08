@@ -38,12 +38,12 @@ const WeatherWidget = () => {
                 <div class="weather__card"> <span class="icon"><img class="weather__img" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
                      <div className="row"> 
                      <div class="weather__title">  
-                      <p className="weather__name">{weatherData.name}</p>
+                      <p className="weather__name">{weatherData.name}<img className="weather__location-img" src="img/Locationred.png"/></p>
                      <div class="weather__temp">{Math.round(weatherData.main.temp)}<sup>&deg;</sup></div>
                     </div>
                         <div class="column4">
                             <div class="weather__descrip">General</div>
-                            <div class="weather__value">{weatherData.weather[0].main}</div>
+                            <div class="weather__temp">{weatherData.weather[0].main}</div>
                         </div>
 
                         {/* <div class="column4">

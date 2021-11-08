@@ -26,13 +26,19 @@
 }
 
 .popular_destinations_card_city {
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0.6) 0,rgba(0,0,0,0.6) calc(100% - 20px),rgba(0,0,0,0));
+    height: 80px;
     font-size: 24px;
     line-height: 28px;
-    color: #000;
+    color: white;
     letter-spacing: .02em;
     position: absolute;
-    padding: 0px 10px 10px;
+    padding: 0px 15px 10px;
     z-index: 40;
-    bottom:10px;
-    font-weight: bold;
+    bottom:0px;
+    right: 0;
+    left: 0;
+    font-weight: 900;
+  
 }
