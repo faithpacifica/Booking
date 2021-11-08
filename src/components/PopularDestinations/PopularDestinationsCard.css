@@ -1,0 +1,38 @@
+.test-box{
+    display: flex;
+}
+
+.popular_destinations_card_link {
+    padding-top: 10px;
+    display: block;
+}
+
+.popular_destinations_card_link:not(:last-child) {
+    margin-right: 16px;
+}
+
+.popular_card_wrapper {
+    position: relative;
+    width: 272px;
+    height: 272px;
+}
+
+.popular_destinations_card_img {
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.popular_destinations_card_city {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    letter-spacing: .02em;
+    position: absolute;
+    padding: 0px 10px 10px;
+    z-index: 40;
+    bottom:10px;
+    font-weight: bold;
+}

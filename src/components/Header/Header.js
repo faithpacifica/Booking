@@ -10,7 +10,7 @@ const Header = () => {
         <Link className="site-header-logo" to='/' >
           <img className="site-header-logo-img" src='img/logo.svg' alt='site-header-logo' />
         </Link>
-        <div className="currency-rates">
+        <div className="">
           <button className="" type='button'>
             UZS
           </button>
