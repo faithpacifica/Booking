@@ -22,26 +22,31 @@
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid;
+    border:none;
+    outline: none;
 }
 .weather__name{
     margin:0;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
     color:rgb(3, 82, 27);
 }
 .weather__descrip{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color:rgb(3, 82, 27);
 }
 .weather__temp{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     color:rgb(3, 82, 27);
 }
 .weather__location-img{
-    width: 24px;
+    width: 18px;
     margin:0 5px;
 
+}
+.weather__img{
+    width: 80px;
+    height: 80px;
 }

@@ -15,9 +15,10 @@
     top:13px;
     left:227px;
     width: 36px;
+    height: 36px;
     background-color: #fff;
     border-radius:50%;
-    padding:3px;
+    border:none;
 }
 
 
@@ -27,6 +28,7 @@
     font-weight: 700;
     color:#000;
     margin:0;
+
 }
 
 .restaurant-card__reyting{
@@ -42,11 +44,22 @@
 }
 
 .restautant-card__name:hover{
-    border-bottom:2px solid #000;
+    text-decoration: underline;
     width: 100%;
+    
 }
 .restaurant-card:hover{
-    /* box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-    transform: scale(1.10, 1.10); */
     opacity: 0.7;
 }
+
+.restaurant-card-heart{
+    font-size: 40px !important;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+}
+.restaurant-card__like .active{
+    background-color: red;
+}
+  
+  

@@ -3,30 +3,51 @@ import "./weather.css";
 import {useState, useEffect} from "react";
 
 const WeatherWidget = () => {
+    // const REACT_APP_API_URL = `https://api.openweathermap.org/data/2.5`
     const Weatherapi = `4497860ea86e515850b9a3269d67f6b0`;
     const [weatherData, setWeatherData] = useState([{}]);
     const [city, setCity] = useState("");
-    const [img, setImg] = useState("");
+    const [lat, setLat] = useState([]);
+    const [long, setLong] = useState([]);
+    // const [data, setData] = useState([]);
 
-    const getWeather = (event) =>{
+    const getWeather = (event) =>{ 
+
         if (event.key == "Enter"){
-          fetch (`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Weatherapi}`).then
-          (res =>res.json()
+          fetch (`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Weatherapi}`)
+          .then(res =>res.json()
           ).then (data =>{ 
-            //   console.log(Window.navigatior.geolocation)
             setWeatherData(data);
             setCity("")  ;
-            setImg("");
-            
             
           }
           
           )  
         }
       }
+
+    useEffect(() => {
+        
+        navigator.geolocation.getCurrentPosition(function(position){
+            setLat(position.coords.latitude);
+            setLong(position.coords.longitude);
+        });
+        
+    }, []);
      
-
-
+    useEffect(() => {
+        
+        fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&appid=${Weatherapi}`)
+            .then(res =>res.json())
+            .then(result =>{
+                setWeatherData(result);
+            });
+        
+    }, [lat, long]);
+        
+        
+   
+    
     return (
         
         <div className = 'weather__component'>
@@ -38,28 +59,16 @@ const WeatherWidget = () => {
                    </div>
                ): (
                
-                 <div class="column4">
-                <div class="weather__card"> <span class="icon"><img class="weather__img"   src={weatherData.main.icon}  /></span>
-                     <div className="row"> 
-                     <div class="weather__title">  
-                      <p className="weather__name">{weatherData.name}<img className="weather__location-img" src="img/Locationred.png"/></p>
-                     <div class="weather__temp">{Math.round(weatherData.main.temp)}<sup>&deg;</sup></div>
+                <div class="column4"> 
+                <div class="weather__card"> <span class="icon"><img class="weather__img"   src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}  /></span>  
+                    <div class="weather__title">  
+                    <p className="weather__name">{weatherData.name}<img className="weather__location-img" src="img/Locationred.png"/></p>
+                    <div class="weather__temp">{Math.round(weatherData.main.temp)}<sup>&deg;</sup></div>
+                    <div class="weather__temp">{weatherData.weather[0].main}</div>
                     </div>
-                        <div class="column4">
-                            <div class="weather__descrip">General</div>
-                            <div class="weather__temp">{weatherData.weather[0].main}</div>
-                        </div>
-
-                        {/* <div class="column4">
-                            <div class="header">Air pollution</div>
-                            <div class="value">{}</div>
-                        </div>
-                        <div class="column4">
-                            <div class="header">Fire</div>
-                            <div class="value">No</div>
-                        </div> */}
+                     
                     </div>
-                    </div>
+            
                
             </div> 
              
@@ -74,6 +83,7 @@ const WeatherWidget = () => {
      
     
         </div>
+    
     );
 };
 
