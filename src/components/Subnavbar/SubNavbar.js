@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Subnavbar.css";
+import "./SubNavbar.css";
 
-const Subnavbar = () => {
+const SubNavbar = () => {
   return (
     <div className="subnavbar">
       <div className="container">
@@ -31,4 +31,4 @@ const Subnavbar = () => {
   );
 };
 
-export default Subnavbar;
+export default SubNavbar;

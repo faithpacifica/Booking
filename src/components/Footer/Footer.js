@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="about_us">
             <h4 className="site_footer__title">About Agoda</h4>
 
-            <a className="about_us_link" href="">
+            <a className="about_us_link" href="#">
               {" "}
               About Us{" "}
             </a>
@@ -24,17 +24,17 @@ const Footer = () => {
           <ul className="choices footer_list">
           <h4 className="site_footer__title">Destinations</h4>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 Countrires
               </a>
             </li>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 Cities
               </a>
             </li>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 Hotels
               </a>
             </li>
@@ -43,18 +43,18 @@ const Footer = () => {
           <ul className="more footer_list">
           <h4 className="site_footer__title">Explore more</h4>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 {/* TODOhreflarni tuldirish */}
                 Reviews
               </a>
             </li>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 Articles
               </a>
             </li>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 Ideas for Travel
               </a>
             </li>
@@ -62,17 +62,17 @@ const Footer = () => {
 
           <ul className="socials footer_list">
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li className=" footer_list_item">
-              <a className="footer_list_link" href="">
+              <a className="footer_list_link" href="#">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>

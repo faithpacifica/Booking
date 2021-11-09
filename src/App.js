@@ -11,6 +11,8 @@ import SignIn from "./pages/SignIn";
 import ThingsToDo from "./pages/ThingsToDo";
 import NotFound from "./pages/NotFound";
 import Hotels from "./pages/Hotels";
+import GoogleMap from "./pages/GoogleMap";
+import HotelInfo from './pages/HotelInfo';
 
 function App() {
   return (
@@ -27,6 +29,10 @@ function App() {
           <Route path="/restaurants" element={<Restaurants />} />
 
           <Route path="/hotels" element={<Hotels />} />
+          
+          <Route path="/hotel-info" element={<HotelInfo />} />
+
+          <Route path="/map-page" element={<GoogleMap />} />
 
           <Route path="/review" element={<Review />} />
 

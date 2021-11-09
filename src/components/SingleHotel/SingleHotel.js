@@ -1,13 +1,14 @@
 import React from 'react';
 import './SingleHotel.css'
+import { Link } from 'react-router-dom';
 
 const SingleHotel = () => {
     return (
-        <div className="single-hotel">
+        <Link className="single-hotel" to ='/hotel-info'>
         <div className="container">
            SINGLE HOTEL COMPONENT
         </div>
-      </div>
+      </Link>
     );
 };
 

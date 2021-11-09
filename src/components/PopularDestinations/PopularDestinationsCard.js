@@ -11,6 +11,10 @@ const PopularDestinationsCard = () => {
                 <div className='popular_destinations_card_city'>Tulum, Mexico</div>
             </div>
         </Link>
+
+
+
+        
         {/* Pastdagilari kerak emas  keyinroq swiper qushish*/}
         <Link className='popular_destinations_card_link' to = '/city:id'>
             <div className='popular_card_wrapper'>
