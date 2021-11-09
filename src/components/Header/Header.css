@@ -1,48 +1,104 @@
-.site__header{
-    background-color: #003580; 
+.site__header {
+    background-color: #003580;
     padding: 15px 0;
 }
-.site__header__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.site-header-logo-img{
+
+.site-header-logo-img {
     color: #fff;
     width: 100px;
     object-fit: contain;
     object-position: center
 }
-.site-header__subgroup{
-    display: flex;
+
+.blog_pages__my_trips {
+    margin-right: 60px;
+    padding: 8px 6px;
+    border-radius: 20px;
+    transition: all 0.5s;
 }
-.blog_pages{
-    margin-right: 40px;
+
+.blog_pages__review {
+    padding: 8px 6px;
+    border-radius: 20px;
+    transition: all 0.5s;
 }
-.blog_pages__review,.auth__registration{
+
+.blog_pages__review,
+.auth__registration {
     margin-right: 20px;
 }
-.site-header-link{
+
+.site-header-link {
     font-weight: 500;
     color: #fff;
 }
-.currency{
+
+.currency {
     font-size: 18px;
     margin-right: 20px;
 }
-.language,.currency{
+
+.language,
+.currency {
+    width: 48px;
+    height: 48px;
     color: #fff;
     vertical-align: middle;
     background: transparent;
     border: none;
+    transition: linear 0.1s;
 }
-.language__image{
+
+.language__image {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     background-color: #f2f2f2;
 }
-.auth__registration,.auth__sign-in{
+
+.auth__registration,
+.auth__sign-in {
+    transition: linear 0.1s;
     padding: 8px;
     border: 2px solid #fff;
+}
+
+/* ===== Header Linkes hover and active positions ===== */
+
+.auth__registration:hover,
+.auth__sign-in:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.auth__registration:active,
+.auth__sign-in:active {
+    opacity: 0.5;
+}
+
+.blog_pages__review:hover,
+.blog_pages__my_trips:hover {
+    background-color: rgba(205, 205, 205, 0.4);
+    color: #fff;
+}
+
+.blog_pages__review:active,
+.blog_pages__my_trips:active {
+    opacity: 0.5;
+}
+
+.language:hover,
+.currency:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+
+
+/* ===== Header Icons ===== */
+.fa-pen,
+.fa-heart {
+    color: #fff !important;
+    font-size: 20px !important;
+    margin-right: 6px;
 }

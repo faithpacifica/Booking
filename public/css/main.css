@@ -16,6 +16,10 @@ html{
   a{
     text-decoration: none;
   }
+
+  input{
+    outline: none;
+  }
   
   body {
     display: flex;
@@ -56,5 +60,11 @@ html{
     background-size: cover;
     background-position: top center;
     /* height: 80vh; */
+  }
+  .sign-up-page{
+    background-image: url(../img/register-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   

@@ -1,0 +1,42 @@
+
+.sign-up-page{
+   display: flex;
+   justify-content: center;
+}
+.sign-up-form{
+    padding: 20px 60px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #4285F4;
+}
+
+.sign-up-form__title{
+    color: #fff;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group__input{
+    background-color: rgb(225, 225, 225);
+    border: none;
+    border-radius: 6px;
+    padding: 15px 0;
+    color: #fff;
+    padding-left: 15px;
+}
+.form-group__label{
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.register-form__btn{
+    margin: 35px 0 15px ;
+    color: #fff;
+    background-color:#264c8a ;
+    border: none;
+    width: 100%;
+    border-radius: 8px ;
+    padding: 20px 0;
+    font-size: 20px;
+}
