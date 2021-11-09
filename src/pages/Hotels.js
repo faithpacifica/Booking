@@ -12,7 +12,7 @@ const Hotels = () => {
   return (
       <div  className="hotels_page">
             <SubNavbar />
-          <div className="container">
+          <div className="container hotels-container">
             <Grid container spacing={2} >
 
             <Grid item xs={4} spacing={1} direction="column" justifyContent="center" alignItems="center">
