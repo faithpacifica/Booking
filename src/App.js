@@ -10,6 +10,7 @@ import Review from "./pages/Review";
 import SignIn from "./pages/SignIn";
 import ThingsToDo from "./pages/ThingsToDo";
 import NotFound from "./pages/NotFound";
+import Hotels from "./pages/Hotels";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path="/register" element={<Register />} />
 
           <Route path="/restaurants" element={<Restaurants />} />
+
+          <Route path="/hotels" element={<Hotels />} />
 
           <Route path="/review" element={<Review />} />
 
