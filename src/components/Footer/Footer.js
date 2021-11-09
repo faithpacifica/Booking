@@ -44,7 +44,7 @@ const Footer = () => {
           <h4 className="site_footer__title">Explore more</h4>
             <li className=" footer_list_item">
               <a className="footer_list_link" href="">
-                {/* TODO:hreflarni tuldirish */}
+                {/* TODOhreflarni tuldirish */}
                 Reviews
               </a>
             </li>
