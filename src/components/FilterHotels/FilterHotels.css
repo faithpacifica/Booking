@@ -1,0 +1,14 @@
+.star-box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+}
