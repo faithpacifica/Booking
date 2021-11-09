@@ -1,0 +1,140 @@
+.signIn-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn-form {
+    margin: 20px 0;
+    width: 630px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 80px;
+}
+
+.signIn-form__title {
+    margin: 0 auto 6px auto;
+    font-size: 39px;
+    color: #555;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.site-login-form {
+    padding-top: 20px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form__link {
+    padding: 15px;
+    border-radius: 10px;
+    width: calc((100% - 20px)/2);
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.login-form__link:hover {
+    background-image: linear-gradient(45deg, #00dbde, #fc00ff);
+    color: white;
+}
+
+.login-form__link i {
+    font-size: 36px;
+}
+
+.login-form__link_face {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.login-form__link_google {
+    color: #555;
+    background-color: #fff;
+}
+
+.login-communication {
+    padding-top: 32px;
+}
+
+.google-image {
+    margin-right: 15px;
+}
+
+.login-communication__interrogation,
+.login-communication__input {
+    display: block;
+}
+
+.login-communication__interrogation {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0 5px 0;
+}
+
+.login-communication__input {
+    color: #333;
+    line-height: 1.2;
+    font-size: 18px;
+    width: 100%;
+    background: 0 0;
+    height: 60px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    overflow: visible;
+    background-color: #f7f7f7;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+}
+
+.login-communication__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    transition: all .4s;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+}
+
+.login-communication__btn:hover {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+
+.login-help {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-help__text,
+.login-help__link {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.login-help__link {
+    margin-left: 6px;
+    border-bottom: 1px solid #999;
+}

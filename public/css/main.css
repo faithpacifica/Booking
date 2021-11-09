@@ -54,5 +54,7 @@ html{
     background-image: url(../img/sign-in-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
+    /* height: 80vh; */
   }
   

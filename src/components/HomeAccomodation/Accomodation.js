@@ -14,7 +14,6 @@ const ExploreMore = () => {
                       <RestaurantCard />
                       <RestaurantCard />
                       <RestaurantCard />
-                      <RestaurantCard />
                  </div>
                 
             </div>
