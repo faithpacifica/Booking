@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {NavLink, Link } from "react-router-dom";
 import "./SubNavbar.css";
 
 const SubNavbar = () => {
@@ -8,22 +8,22 @@ const SubNavbar = () => {
       <div className="container">
         <ul className="subnavbar-list">
           <li className="subnavbar-item">
-            <Link className="subnavbar-link" to="/hotels">
+            <NavLink  activeClassName="selected" className="subnavbar-link" to="/hotels">
               <i class="fas fa-hotel"></i> 
               <span className="subnavbar-text"> Hotels</span>
-            </Link>
+            </NavLink>
           </li>
           <li className="subnavbar-item">
-            <Link className="subnavbar-link" to="/things_to_do">
+            <NavLink  activeClassName="selected" className="subnavbar-link" to="/things_to_do">
               <i class="far fa-calendar-check"></i>
               <span className="subnavbar-text"> Things to Do</span>
-            </Link>
+            </NavLink>
           </li>
           <li className="subnavbar-item">
-            <Link className="subnavbar-link" to="/restaurants">
+            <NavLink  activeClassName="selected" className="subnavbar-link" to="/restaurants">
               <i class="fas fa-utensils"></i>
               <span className="subnavbar-text">Restaurants</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
