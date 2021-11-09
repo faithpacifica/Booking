@@ -1,6 +1,6 @@
 import React from "react";
 import PopularDestinationCard from './PopularDestinationsCard';
-import styled, { css } from 'styled-components';
+// import styled, { css } from 'styled-components';
 import './PopularDestinations.css'
 
 
