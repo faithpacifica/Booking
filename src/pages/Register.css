@@ -2,12 +2,14 @@
 .sign-up-page{
    display: flex;
    justify-content: center;
+   padding: 15px 0;
 }
 .sign-up-form{
     padding: 20px 60px;
     width: 600px;
     margin: 0 auto;
     background-color: #4285F4;
+    border-radius: 8px;
 }
 
 .sign-up-form__title{
@@ -22,7 +24,6 @@
     border: none;
     border-radius: 6px;
     padding: 15px 0;
-    color: #fff;
     padding-left: 15px;
 }
 .form-group__label{
