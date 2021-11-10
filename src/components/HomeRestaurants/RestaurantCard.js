@@ -5,14 +5,14 @@ import "./RestaurantCard.css";
 
 const RestaurantCard = ({restaurantobj}) => {
     // const IMG_URl = `https://media-cdn.tripadvisor.com/media`
-    // const mappedCuisine = restaurantobj.cuisine.map((el, i) =>{
-    //     return(
-    //         <span key={i}>
-    //          {el.name ? el.name : " "}
-    //         </span>
-    //     )
+    const mappedCuisine = restaurantobj.cuisine ? restaurantobj.cuisine.map((el, i) =>{
+        return(
+            <span key={i}>
+             {el.name ? el.name : " "}
+            </span>
+        )
        
-    // })
+    }) : '';
     return (
      <div className="restaurant-contenrestaurant-content" >
         <Link to='/city' >
@@ -25,7 +25,7 @@ const RestaurantCard = ({restaurantobj}) => {
                 
                 <span className="restaurant-card__reyting">{restaurantobj.rating}</span>  
                 <span className="restaurant-card__reyting">{restaurantobj.price}</span>  
-                {/* <p className="restaurant-card__description">{mappedCuisine}</p> */}
+                <p className="restaurant-card__description">{mappedCuisine}</p>
              </div>
             </div>
         </Link> 
