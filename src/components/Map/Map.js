@@ -9,7 +9,13 @@ const Map = () => {
     <Link className="map" to='/map-page'>
      
       <Grid item xs={9}  >
-          < img className="map-img"  src="/../img/googlemap.jpg" alt="" />
+        <div className="map-inner-wrapper">
+            < img className="map-img"  src="/../img/googlemap.jpg" alt="google map" />
+            <button class="ui_button secondary">
+            <i class="fas fa-map-marker-alt"></i><span> View map</span>
+            </button>
+        </div>
+         
       </Grid>
     
     </Link>
