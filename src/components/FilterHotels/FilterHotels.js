@@ -259,7 +259,7 @@ const FilterHotels = () => {
 
           <button>
             <span className="show-less">Show less</span>
-            <i class="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-down"></i>
           </button>
         
           <hr />

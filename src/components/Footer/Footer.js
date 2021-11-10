@@ -63,17 +63,17 @@ const Footer = () => {
           <ul className="socials footer_list">
             <li className=" footer_list_item">
               <a className="footer_list_link" href="#">
-                <i class="fab fa-facebook"></i>
+                <i className="fab fa-facebook"></i>
               </a>
             </li>
             <li className=" footer_list_item">
               <a className="footer_list_link" href="#">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </li>
             <li className=" footer_list_item">
               <a className="footer_list_link" href="#">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
             </li>
           </ul>

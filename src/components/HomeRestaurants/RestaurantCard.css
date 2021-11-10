@@ -3,17 +3,18 @@
     height: 345px;
     color:violet;
     margin-right: 16px;
+   
     
 }
 
-.restaurant-card__img{
-    position: relative;
+.restaurant-content{
+    position: relative; 
 }
 
 .restaurant-card__like{
     position: absolute;
-    top:13px;
-    left:227px;
+    bottom: 326px;
+    left: 257px;
     width: 36px;
     height: 36px;
     background-color: #fff;
@@ -58,7 +59,7 @@
     top: -1px;
     right: -2px;
 }
-.restaurant-card__like .active{
+.restaurant-card__like:active{
     background-color: red;
 }
   
