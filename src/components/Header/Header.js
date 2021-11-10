@@ -60,7 +60,7 @@ const Header = () => {
                 <i className={`fa fa-chevron-right icon ${isCurrencyOpen && "open"}`}></i>
               </div>
               <div className={`dropdown-body ${isCurrencyOpen && 'open'}`}>
-                {currency.map(item => (
+                {currency.map((item,i) => (
                   <div className="dropdown-item" onClick={e => handleCurrencyClick(e.target.id)} id={item.id}>
                     <span className={`dropdown-item-dot ${item.id == selectedCurrency && 'selected'}`}>• </span>
                     {item.label}
@@ -74,30 +74,20 @@ const Header = () => {
                 <i className={`fa fa-chevron-right icon ${isLanguageOpen && "open"}`}></i>
               </div>
               <div className={`dropdown-body ${isLanguageOpen && 'open'}`}>
-                {language.map(item => (
+                {language.map((item,i) => (
                   // <div className="dropdown-item" onClick={e => handleLanguageClick(e.target.id)} id={item.id}>
                     <img className={` dropdown__image ${item.id !== selectedLanguage && 'selected'}`} onClick={e => handleLanguageClick(e.target.id)} id={item.id} src={`${item.img}`} />  
                 ))}
               </div>
-          <Grid item xs={2}>
-          <div className='dropdown'>
-        <div className='dropdown-header currency' onClick={toggleDropdown}>
-          {selectedItem ? items.find(item => item.id == selectedItem).label : "UZS"}
-          <i className={`fa fa-chevron-right icon ${isOpen && "open"}`}></i>
-        </div>
-        <div className={`dropdown-body ${isOpen && 'open'}`}>
-          {items.map((item, i) => (
-            <div key={i} className="dropdown-item" onClick={e => handleItemClick(e.target.id)} id={item.id}>
-              <span className={`dropdown-item-dot ${item.id == selectedItem && 'selected'}`}>• </span>
-              {item.label}
-            </div>
-          </Grid>
+              </div>
+              </Grid>
           <Grid container direction="row" justifyContent="flex-end" alignItems="center" item xs={6}>
             <Link className="blog_pages__review site-header-link" to='/review'><i className="fas fa-pen"></i>Review</Link>
             <Link className="blog_pages__my_trips site-header-link" to='/my-trips'><i className="far fa-heart"></i>Trips</Link>
             <Link className="auth__registration site-header-link" to="/register">Register</Link>
             <Link className="auth__sign-in site-header-link" to="/sign-in">Sign In</Link>
           </Grid>
+       
         </Grid>
       </div>
     </header>
