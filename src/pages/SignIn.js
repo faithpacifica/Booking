@@ -9,7 +9,7 @@ const SignIn = () => {
                 <h2 className='signIn-form__title'>Sign In With</h2>
                 <form className='site-login-form'>
                     <div className='login-form'>
-                        <Link className='login-form__link login-form__link_face' to='/'><i class="fab fa-facebook-square"></i>Facebook</Link>
+                        <Link className='login-form__link login-form__link_face' to='/'><i className="fab fa-facebook-square"></i>Facebook</Link>
                         <Link className='login-form__link login-form__link_google' to='/'><img className='google-image' src='img/icon-google.png' alt='GOOGLE' />Google</Link>
                     </div>
                     <div className='login-communication'>

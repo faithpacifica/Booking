@@ -1,14 +1,23 @@
 import React from "react";
 import "./Map.css";
 import { Link } from 'react-router-dom';
+import { Grid } from "@material-ui/core";
 
 const Map = () => {
   return (
-    //   TODO:KOMPONENTMI yoki Alohida Page ochamizmi?
+  
     <Link className="map" to='/map-page'>
-      <div className="container">
-          MAP COMPONENT
-      </div>
+     
+      <Grid item xs={9}  >
+        <div className="map-inner-wrapper">
+            < img className="map-img"  src="/../img/googlemap.jpg" alt="google map" />
+            <button class="ui_button secondary">
+            <i class="fas fa-map-marker-alt"></i><span> View map</span>
+            </button>
+        </div>
+         
+      </Grid>
+    
     </Link>
   );
 };

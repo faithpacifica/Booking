@@ -6,7 +6,7 @@ const FilterHotels = () => {
   // TODO:Class larini tugirlash
   return (
     <div className="filter-hotels">
-      <div className="container">
+      <div className="container filter-container">
         <div className="left-column-wrapper left-column">
           <h3 className="left-column">Filtered by:</h3>
 
@@ -259,7 +259,7 @@ const FilterHotels = () => {
 
           <button>
             <span className="show-less">Show less</span>
-            <i class="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-down"></i>
           </button>
         
           <hr />

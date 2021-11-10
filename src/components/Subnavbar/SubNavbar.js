@@ -9,19 +9,19 @@ const SubNavbar = () => {
         <ul className="subnavbar-list">
           <li className="subnavbar-item">
             <NavLink  activeClassName="selected" className="subnavbar-link" to="/hotels">
-              <i class="fas fa-hotel"></i> 
+              <i className="fas fa-hotel"></i> 
               <span className="subnavbar-text"> Hotels</span>
             </NavLink>
           </li>
           <li className="subnavbar-item">
             <NavLink  activeClassName="selected" className="subnavbar-link" to="/things_to_do">
-              <i class="far fa-calendar-check"></i>
+              <i className="far fa-calendar-check"></i>
               <span className="subnavbar-text"> Things to Do</span>
             </NavLink>
           </li>
           <li className="subnavbar-item">
             <NavLink  activeClassName="selected" className="subnavbar-link" to="/restaurants">
-              <i class="fas fa-utensils"></i>
+              <i className="fas fa-utensils"></i>
               <span className="subnavbar-text">Restaurants</span>
             </NavLink>
           </li>

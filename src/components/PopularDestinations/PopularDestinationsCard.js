@@ -13,7 +13,6 @@ const PopularDestinationsCard = () => {
         </Link>
 
 
-
         
         {/* Pastdagilari kerak emas  keyinroq swiper qushish*/}
         <Link className='popular_destinations_card_link' to = '/city:id'>
