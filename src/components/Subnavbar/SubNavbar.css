@@ -1,12 +1,13 @@
 .subnavbar {
     background-color: #003580;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .subnavbar-list {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0 auto;
+    padding: 0;
 }
 
 .subnavbar-item {
@@ -16,7 +17,7 @@
 
 .subnavbar-text {
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .subnavbar-link {
@@ -35,8 +36,8 @@
 .fa-calendar-check,
 .fa-hotel {
     vertical-align: middle;
-    color: rgba(195, 198, 199, 0.6);
-    font-size: 30px;
+    color: white;
+    font-size: 20px;
     margin-right: 15px;
 }
 
@@ -46,5 +47,5 @@
 
 .selected {
     background-color: #fff; 
-    /* TODO navlink orqa rangi ozgarmadi */
+    /* TODO: navlink orqa rangi ozgarmadi */
 }
