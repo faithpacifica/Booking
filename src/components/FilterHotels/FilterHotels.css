@@ -12,3 +12,7 @@
     border-style: solid;
     border-color: #e0e0e0;
 }
+
+.filter-container{
+    padding-left: 0 !important;
+}

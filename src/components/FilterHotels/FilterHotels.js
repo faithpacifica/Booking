@@ -6,7 +6,7 @@ const FilterHotels = () => {
   // TODO:Class larini tugirlash
   return (
     <div className="filter-hotels">
-      <div className="container">
+      <div className="container filter-container">
         <div className="left-column-wrapper left-column">
           <h3 className="left-column">Filtered by:</h3>
 
