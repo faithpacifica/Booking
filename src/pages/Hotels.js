@@ -8,7 +8,14 @@ import Map from "../components/Map/Map";
 import FilterHotels from "../components/FilterHotels/FilterHotels";
 import SingleHotel from "../components/SingleHotel/SingleHotel";
 
+
+// MyA
+
+
 const Hotels = () => {
+
+
+
   return (
       <div  className="hotels_page">
             <SubNavbar />

@@ -9,22 +9,39 @@ import "./Header.css";
 const Header = () => {
 
 
+  // Dropdown function//
+
   const { useState, useEffect } = React;
 
-  const data = [{id: 0, label: "UZS"}, {id: 1, label: "DOLLAR"}];
-  
-  
-    const [isOpen, setOpen] = useState(false);
-    const [items, setItem] = useState(data);
-    const [selectedItem, setSelectedItem] = useState(null);
-    
-    const toggleDropdown = () => setOpen(!isOpen);
-    
-    const handleItemClick = (id) => {
-      selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
-    }
-  
+  const dataCurrency = [{ id: 0, label: "UZS" }, { id: 1, label: "DOLLAR" }];
 
+
+  const [isCurrencyOpen, setCurrencyOpen] = useState(false);
+  const [currency, setCurrency] = useState(dataCurrency);
+  const [selectedCurrency, setSelectedCurrency] = useState(null);
+
+  const currencyDropdown = () => setCurrencyOpen(!isCurrencyOpen);
+
+  const handleCurrencyClick = (id) => {
+    selectedCurrency == id ? setSelectedCurrency(null) : setSelectedCurrency(id);
+    setCurrencyOpen(false);
+  }
+
+
+  const dataLanguage = [{ id: 0, img: '/img/russian-flag.png' }, { id: 1, img: '/img/english-flag.png' }];
+
+
+  const [isLanguageOpen, setLanguageOpen] = useState(false);
+  const [language, setLanguage] = useState(dataLanguage);
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+  const languageDropdown = () => setLanguageOpen(!isLanguageOpen);
+
+
+  const handleLanguageClick = (id) => {
+    selectedLanguage == id ? setSelectedLanguage(null) : setSelectedLanguage(id);
+    setLanguageOpen(false);
+  }
 
 
   return (
@@ -36,25 +53,33 @@ const Header = () => {
               <img className="site-header-logo-img" src='img/agoda_logo.png' alt='site-header-logo' />
             </Link>
           </Grid>
-          <Grid item xs={2}>
-          <div className='dropdown'>
-        <div className='dropdown-header currency' onClick={toggleDropdown}>
-          {selectedItem ? items.find(item => item.id == selectedItem).label : "UZS"}
-          <i className={`fa fa-chevron-right icon ${isOpen && "open"}`}></i>
-        </div>
-        <div className={`dropdown-body ${isOpen && 'open'}`}>
-          {items.map(item => (
-            <div className="dropdown-item" onClick={e => handleItemClick(e.target.id)} id={item.id}>
-              <span className={`dropdown-item-dot ${item.id == selectedItem && 'selected'}`}>• </span>
-              {item.label}
+          <Grid direction="row" alignItems="center" container item xs={2}>
+            <div className='dropdown'>
+              <div className='dropdown-header currency' onClick={currencyDropdown}>
+                {selectedCurrency ? currency.find(item => item.id == selectedCurrency).label : "UZS"}
+                <i className={`fa fa-chevron-right icon ${isCurrencyOpen && "open"}`}></i>
+              </div>
+              <div className={`dropdown-body ${isCurrencyOpen && 'open'}`}>
+                {currency.map(item => (
+                  <div className="dropdown-item" onClick={e => handleCurrencyClick(e.target.id)} id={item.id}>
+                    <span className={`dropdown-item-dot ${item.id == selectedCurrency && 'selected'}`}>• </span>
+                    {item.label}
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div> {/* <button className="currency" type='button'>UZS</button> */}
-            <button className="language" type='button'>
-              <img className="language__image" src='img/russian-flag.png' />
-              {/* <img src='img/anglish-flag.png'/> */}
-            </button>
+            <div className='dropdown'>
+              <div className='dropdown-header language' onClick={languageDropdown}>
+                <img className="language__image" src={selectedLanguage ? language.find(item => item.id == selectedLanguage).img : "/img/russian-flag.png"} />
+                <i className={`fa fa-chevron-right icon ${isLanguageOpen && "open"}`}></i>
+              </div>
+              <div className={`dropdown-body ${isLanguageOpen && 'open'}`}>
+                {language.map(item => (
+                  // <div className="dropdown-item" onClick={e => handleLanguageClick(e.target.id)} id={item.id}>
+                    <img className={` dropdown__image ${item.id !== selectedLanguage && 'selected'}`} onClick={e => handleLanguageClick(e.target.id)} id={item.id} src={`${item.img}`} />  
+                ))}
+              </div>
+            </div>
           </Grid>
           <Grid container direction="row" justifyContent="flex-end" alignItems="center" item xs={6}>
             <Link className="blog_pages__review site-header-link" to='/review'><i class="fas fa-pen"></i>Review</Link>

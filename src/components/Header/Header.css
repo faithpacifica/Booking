@@ -40,8 +40,7 @@
 
 .language,
 .currency {
-    width: 48px;
-    height: 48px;
+    padding: 2px 5px;
     color: #fff;
     vertical-align: middle;
     background: transparent;
@@ -106,6 +105,7 @@
 /* ===== Dropdown ===== */
 
 .dropdown {
+  vertical-align: middle;
     display: inline-block;
     /* width: 300px;
     border-radius: 10px;
@@ -122,10 +122,12 @@
   }
   
   .dropdown-body {
+    position: absolute;
       background-color: #fff;
     padding: 5px;
     border-top: 1px solid #E5E8EC;
     display: none;
+    z-index: 111;
   }
   
   .dropdown-body.open {
@@ -155,8 +157,14 @@
     color: #91A5BE;
     transform: rotate(0deg);
     transition: all .2s ease-in-out;
+    margin-left: 5px;
   }
   
   .icon.open {
     transform: rotate(90deg);
+  }
+
+  .dropdown__image{
+    width: 100%;
+    height: 25px;
   }
