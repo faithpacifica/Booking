@@ -1,10 +1,12 @@
-.map {
-    width: 295px;
-    height: 136px;
-}
+/* .map {
+    
+} */
 
 .map-inner-wrapper {
     position: relative;
+    width: 300px;
+    height: 136px;
+    margin-bottom: 20px;
 }
 
 .map-img {
