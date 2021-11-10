@@ -21,7 +21,7 @@
 }
 
 .subnavbar-link {
-    padding: 15px 10px;
+    padding: 10px 8px;
     border-radius: 25px;
     border: 1px solid transparent;
     transition: all 0.3s;
@@ -32,12 +32,12 @@
     background-color: hsla(0, 0%, 100%, .1);
 }
 
-.fa-utensils,
-.fa-calendar-check,
-.fa-hotel {
+.subnavbar .fa-utensils,
+.subnavbar .fa-calendar-check,
+.subnavbar .fa-hotel {
     vertical-align: middle;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 15px;
 }
 

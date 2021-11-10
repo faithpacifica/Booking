@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherWidget from "./WeatherWidget";
-import "./intro.css";
+import "./Intro.css";
 
 const Intro = () => {
 
