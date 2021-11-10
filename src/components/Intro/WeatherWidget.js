@@ -1,5 +1,5 @@
 import React from 'react';
-import "./WeatherWidget.css";
+import "./Weatherwidget.css";
 import {useState, useEffect} from "react";
 
 const WeatherWidget = ({lat, long}) => {
