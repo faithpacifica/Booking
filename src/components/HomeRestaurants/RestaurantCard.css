@@ -1,5 +1,5 @@
 .restaurant-card {
-    width: 281px;
+    width: 100%;
     height: 345px;
     color:violet;
     margin-right: 16px;
@@ -14,7 +14,7 @@
 .restaurant-card__like{
     position: absolute;
     bottom: 297px;
-    left: 257px;
+    left: 222px;
     width: 29px;
     height: 36px;
     background-color: #fff;

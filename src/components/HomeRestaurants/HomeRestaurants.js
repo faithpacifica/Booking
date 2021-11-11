@@ -62,7 +62,7 @@ const HomeRestaurants = ({lat, long}) => {
                 modules={[Autoplay]} 
                 grabCursor={true}
                 spaceBetween={30}
-                slidesPerView={5}
+                slidesPerView={4}
                 loopautoplay={{delay:3000, disableOnInteraction:false}}>
                 {restaurantList.filter(el => el.hasOwnProperty('photo')).map((el, i)=>
                 (<SwiperSlide key={i}><RestaurantCard restaurantobj={el} /></SwiperSlide>))}   

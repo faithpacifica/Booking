@@ -19,7 +19,7 @@ const RestaurantCard = ({restaurantobj}) => {
         <Link to='/restaurants' >
             <div className='restaurant-card' >
              <div className="restaurant-card__img">
-                { restaurantobj.photo ? <img className="restaurant-card__photo" src={restaurantobj.photo.images.original.url} alt={restaurantobj.name}/> : <div className="restaurant-card__nophoto"><img src="img/No-Image-Placeholder.svg.png" width="200px"/></div> }
+                { restaurantobj.photo ? <img className="restaurant-card__photo" src={restaurantobj.photo.images.original.url}  alt={restaurantobj.name}/> : <div className="restaurant-card__nophoto"><img src="img/No-Image-Placeholder.svg.png" width="200px"/></div> }
              </div>
              <div className="restaurant-card__main">
                 <h3 className="restautant-card__name">{restaurantobj.name}</h3>
