@@ -2,14 +2,15 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import "./RestaurantCard.css";
 // import Rating from '@mui/material/Rating';
+// import Stack from '@mui/material/Stack';
+
 
 const RestaurantCard = ({restaurantobj}) => {
     // const IMG_URl = `https://media-cdn.tripadvisor.com/media`
     const mappedCuisine = restaurantobj.cuisine ? restaurantobj.cuisine.map((el, i) =>{
         return(
             <span key={i}>
-             {el.name ? el.name : " " }
-             , </span>
+            {el.name ? el.name : "  " }   </span>
         )
        
     }) : '';
@@ -23,9 +24,13 @@ const RestaurantCard = ({restaurantobj}) => {
              </div>
              <div className="restaurant-card__main">
                 <h3 className="restautant-card__name">{restaurantobj.name}</h3>
-                
-                <span className="restaurant-card__reyting">{restaurantobj.rating}</span>  
-                <span className="restaurant-card__reyting">{restaurantobj.price}</span>  
+                {/* <Stack spacing={1}>
+                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
+                </Stack> */}
+                <span className="restaurant-card__reyting">{restaurantobj.rating}</span>                
+                <p className="restaurant-card__reyting">{restaurantobj.price ? restaurantobj.price : <p className="restaurant-card__reyting">$$-$$$</p>}</p>  
+
                 <p className="restaurant-card__description">{mappedCuisine}</p>
              </div>
             </div>

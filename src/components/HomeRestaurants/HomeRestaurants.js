@@ -1,6 +1,5 @@
 import React from 'react';
 import RestaurantCard from './RestaurantCard';
-// import styled from 'styled-components';
 import './HomeRestaurants.css';
 import SwiperCore , { Autoplay } from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -18,6 +17,7 @@ const getApiOptions = {
 const HomeRestaurants = ({lat, long}) => {
 
     SwiperCore.use([Autoplay]);
+
     const [restaurantList, setRestaurantList] = useState([]);
     const [isLoading, setIsLoading] = useState (true);
     const [error, setError] = useState();

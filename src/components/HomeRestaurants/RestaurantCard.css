@@ -10,6 +10,12 @@
 .restaurant-content{
     position: relative; 
 }
+.restaurant-card__photo{
+    height: 209px;
+    width: 273px;
+    display: block;
+    padding-bottom:8px;
+}
 
 .restaurant-card__like{
     position: absolute;
@@ -26,7 +32,8 @@
 
 .restautant-card__name{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 700;
     color:#000;
     margin:0;
@@ -35,8 +42,10 @@
 
 .restaurant-card__reyting{
     font-size: 14px;
+    line-height: 17px;
     font-weight: 400;
     color:rgba(7, 6, 6, 0.89);
+    margin:0;
 }
 .restaurant-card__description{
     margin:0;
