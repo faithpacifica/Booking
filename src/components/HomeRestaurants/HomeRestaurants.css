@@ -1,6 +1,7 @@
 .main-page-accomodation{
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
 .component-heading {
@@ -22,5 +23,5 @@
 
 .main-page-accomodation__inner_wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }

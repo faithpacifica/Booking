@@ -3,7 +3,7 @@ import "../components/Loader.css"
 
 const Loader = () => {
     return (
-        <div>
+        <div className="loader-content">
          <div className="loader loader-7">
         <div className="line line1"></div>
         <div className="line line2"></div>
