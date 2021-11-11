@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import Hotels from "./pages/Hotels";
 import GoogleMap from "./pages/GoogleMap";
 import HotelInfo from './pages/HotelInfo';
+import 'swiper/swiper-bundle.css';
 
 function App() {
   return (

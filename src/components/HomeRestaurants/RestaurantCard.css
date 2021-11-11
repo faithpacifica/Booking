@@ -13,13 +13,14 @@
 
 .restaurant-card__like{
     position: absolute;
-    bottom: 326px;
+    bottom: 297px;
     left: 257px;
-    width: 36px;
+    width: 29px;
     height: 36px;
     background-color: #fff;
     border-radius:50%;
     border:none;
+    z-index: 99;
 }
 
 
@@ -54,10 +55,10 @@
 }
 
 .restaurant-card-heart{
-    font-size: 40px !important;
+    font-size: 44px !important;
     position: absolute;
-    top: -1px;
-    right: -2px;
+    top: -3px;
+    right: -1px;
 }
 .restaurant-card__like:active{
     background-color: red;
