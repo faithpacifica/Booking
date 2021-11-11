@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./RestaurantCard.css";
 // import Rating from '@mui/material/Rating';
 // import Stack from '@mui/material/Stack';

@@ -13,6 +13,10 @@ html{
     box-sizing:inherit;
   }
   
+  *:active{
+    color: #000;
+  }
+
   a{
     text-decoration: none;
   }

@@ -56,7 +56,7 @@ const Header = () => {
           <Grid direction="row" alignItems="center" container item xs={2}>
             <div className='dropdown'>
               <div className='dropdown-header currency' onClick={currencyDropdown}>
-                {selectedCurrency ? currency.find(item => item.id == selectedCurrency).label : "UZS"}
+                {selectedCurrency ? currency.find(item => item.id == selectedCurrency).label : "UZS"} { /*TODO: */}
                 <i className={`fa fa-chevron-right icon ${isCurrencyOpen && "open"}`}></i>
               </div>
               <div className={`dropdown-body ${isCurrencyOpen && 'open'}`}>
@@ -95,3 +95,4 @@ const Header = () => {
 };
 
 export default Header;
+// fetch(`https://travel-advisor.p.rapidapi.com/hotels/list-by-latlng?latitude=${lat}&longitude=${long}&lang=en_US&limit=30&currency=USD&`,getHotelApiOptions )
