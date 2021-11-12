@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./RestaurantCard.css";
-// import Rating from '@mui/material/Rating';
-// import Stack from '@mui/material/Stack';
+import {Rating, Stack} from '@mui/material';
 
 
 const RestaurantCard = ({restaurantobj}) => {
@@ -24,10 +23,9 @@ const RestaurantCard = ({restaurantobj}) => {
              </div>
              <div className="restaurant-card__main">
                 <h3 className="restautant-card__name">{restaurantobj.name}</h3>
-                {/* <Stack spacing={1}>
-                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                <Stack spacing={1}>
                 <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
-                </Stack> */}
+                </Stack>
                 <span className="restaurant-card__reyting">{restaurantobj.rating}</span>                
                 <p className="restaurant-card__reyting">{restaurantobj.price ? restaurantobj.price : <p className="restaurant-card__reyting">$$-$$$</p>}</p>  
 

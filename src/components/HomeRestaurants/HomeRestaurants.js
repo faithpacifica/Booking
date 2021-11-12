@@ -6,13 +6,14 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import Loader from '../Loader';
 import {useState, useEffect } from 'react';
 
-const getApiOptions = {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-		"x-rapidapi-key": "617581803fmshd0bc5f048941cabp138c17jsnce730a8b802f"
-	}
-};
+// const getApiOptions = {
+//     "method": "GET",
+//     "headers": {
+//       "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
+//       "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
+//     }
+	
+// };
 
 const HomeRestaurants = ({lat, long}) => {
 
@@ -24,7 +25,7 @@ const HomeRestaurants = ({lat, long}) => {
 
     useEffect(()=>{
         if(lat != 0 && long !=0) {
-            fetch(`https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?latitude=${lat}&longitude=${long}&limit=50&currency=USD&lang=en_US`, getApiOptions )
+            fetch(`https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?latitude=${lat}&longitude=${long}&limit=30&currency=USD&distance=2&open_now=false&lunit=km&lang=en_US`, getApiOptions )
             .then(response => {
                 if(!response.ok){
                     throw Error('Error in the server')

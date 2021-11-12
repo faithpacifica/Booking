@@ -3,7 +3,7 @@ import WeatherWidget from "./WeatherWidget";
 import "./Intro.css";
 
 const Intro = ({lat, long}) => {
-
+ 
   return (
  
     <section className="intro">
