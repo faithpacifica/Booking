@@ -7,13 +7,13 @@ import Loader from '../Loader';
 
 
 
-// const getRestaurantApiOptions = {
-//     "method": "GET",
-//     "headers": {
-//       "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-//       "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
-//   }
-// }
+const getRestaurantApiOptions = {
+    "method": "GET",
+    "headers": {
+      "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
+      "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
+  }
+}
 
 
 
@@ -68,7 +68,7 @@ const SingleRestaurant = () => {
 
 
   return (
-    <Link className="single-hotel" to='/hotel-info'>
+    <Link className="single-hotel" to='/'>
       <div className="container">
 
         {singlerestaurantList.filter(el => el.hasOwnProperty('photo')).map((el, i) => (

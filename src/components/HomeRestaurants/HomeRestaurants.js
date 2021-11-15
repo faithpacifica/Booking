@@ -6,14 +6,14 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import Loader from '../Loader';
 import {useState, useEffect } from 'react';
 
-// const getApiOptions = {
-//     "method": "GET",
-//     "headers": {
-//       "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-//       "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
-//     }
+const getApiOptions = {
+    "method": "GET",
+    "headers": {
+      "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
+      "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
+    }
 	
-// };
+};
 
 const HomeRestaurants = ({lat, long}) => {
 
