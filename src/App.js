@@ -15,6 +15,7 @@ import GoogleMap from "./pages/GoogleMap";
 import HotelInfo from './pages/HotelInfo';
 import 'swiper/swiper-bundle.css';
 
+
 function App() {
   return (
     <div className="wrapper">
