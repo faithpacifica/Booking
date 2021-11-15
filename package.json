@@ -9,13 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@material-ui/core": "^4.12.3",
-<<<<<<< HEAD
-    "@material-ui/lab": "^4.0.0-alpha.60",
-    "@mui/icons-material": "^5.1.0",
-    "@react-google-maps/api": "^2.7.0",
-=======
     "@mui/material": "^5.1.0",
->>>>>>> 638d8caca1da51dff69bd77452718ab1fee35704
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
