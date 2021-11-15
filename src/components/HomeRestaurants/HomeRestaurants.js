@@ -23,7 +23,7 @@ const HomeRestaurants = ({lat, long}) => {
     const [error, setError] = useState();
 
     useEffect(()=>{
-        if(lat != 0 && long !=0) {
+        if(lat !== 0 && long !== 0) {
             fetch(`https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?latitude=${lat}&longitude=${long}&limit=50&currency=USD&lang=en_US`, getApiOptions )
             .then(response => {
                 if(!response.ok){

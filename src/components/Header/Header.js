@@ -11,7 +11,7 @@ const Header = () => {
 
   // Dropdown function//
 
-  const { useState, useEffect } = React;
+  const { useState} = React;
 
   const dataCurrency = [{ id: 0, label: "UZS" }, { id: 1, label: "DOLLAR" }];
 
@@ -23,7 +23,7 @@ const Header = () => {
   const currencyDropdown = () => setCurrencyOpen(!isCurrencyOpen);
 
   const handleCurrencyClick = (id) => {
-    selectedCurrency == id ? setSelectedCurrency(null) : setSelectedCurrency(id);
+    selectedCurrency === id ? setSelectedCurrency(null) : setSelectedCurrency(id);
     setCurrencyOpen(false);
   }
 
@@ -39,7 +39,7 @@ const Header = () => {
 
 
   const handleLanguageClick = (id) => {
-    selectedLanguage == id ? setSelectedLanguage(null) : setSelectedLanguage(id);
+    selectedLanguage === id ? setSelectedLanguage(null) : setSelectedLanguage(id);
     setLanguageOpen(false);
   }
 

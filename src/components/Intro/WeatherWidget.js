@@ -9,7 +9,7 @@ const WeatherWidget = ({ lat, long }) => {
   const [city, setCity] = useState("");
 
   const getWeather = (event) => {
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Weatherapi}`
       )
@@ -22,7 +22,7 @@ const WeatherWidget = ({ lat, long }) => {
   };
 
   useEffect(() => {
-    if (lat != 0 && long != 0) {
+    if (lat !== 0 && long !== 0) {
       fetch(
         `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&appid=${Weatherapi}`
       )

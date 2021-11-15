@@ -65,9 +65,8 @@ const SingleHotel = () => {
 
 
 
-
-
   return (
+
     <Link className="single-hotel" to='/hotel-info'>
       <div className="container">
 
