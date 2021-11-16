@@ -1,0 +1,61 @@
+.singleRestaurant-card {
+    padding: 16px;
+    border-radius: 2px;
+    border: 1px solid rgb(184, 183, 183);
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.singleRestaurant-card:active {
+    color: black;
+    background: #ebf3ff;
+    border-color: #a3d7fc;
+    box-shadow: 0 0 8px #a3d7fc;
+}
+
+.singleRestaurant-card__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 33;
+}
+
+.singleRestaurant-card__info {
+    width: 100%;
+    padding:0 20px;
+}
+
+.singleRestaurant-card__link {
+    display: block;
+}
+.singleRestaurant-card__secondary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.singleRestaurant-card__title {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.singleRestaurant-card__rating{
+    margin-left:20px;
+}
+
+.singleRestaurant-card__link {
+    background-color: #0071c2;
+    border-color: #0071c2;
+    border-radius: 2px;
+    padding: 4px 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    width: 200px;
+}

@@ -26,9 +26,8 @@ const RestaurantCard = ({restaurantobj}) => {
                 <Stack spacing={1}>
                 <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
                 </Stack>
-                <span className="restaurant-card__reyting">{restaurantobj.rating}</span>                
-                <p className="restaurant-card__reyting">{restaurantobj.price ? restaurantobj.price : <p className="restaurant-card__reyting">$$-$$$</p>}</p>  
-
+                <span className="restaurant-card__reyting">{restaurantobj.rating}</span>             
+                <p className="restaurant-card__reyting">{restaurantobj.price ? restaurantobj.price : <p className="restaurant-card__reyting">$$-$$$</p>}</p> 
                 <p className="restaurant-card__description">{mappedCuisine}</p>
              </div>
             </div>
