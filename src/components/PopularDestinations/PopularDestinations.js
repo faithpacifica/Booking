@@ -10,39 +10,64 @@ import PopularDestinationCard from './PopularDestinationsCard';
 
 const PopularDestinations = () => {
 
-  //   const [destination,setDestination]= useState([]);
-  //   const [error, setError] = useState();
+    const [destination,setDestination]= useState([]);
+    const [error, setError] = useState();
 
-  //   useEffect(() => {
-  //   fetch("https://travel-advisor.p.rapidapi.com/hotel-filters/v2/list?lang=en_US&units=km&currency=USD", {
-  //     "method": "POST",
-  //     "headers": {
-  //       "content-type": "application/json",
-  //       "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-  //       "x-rapidapi-key": "0d44b34b09msh11dc77b8f1a2d7cp1e6176jsn49718d676727"
-  //     },
-  //     "body": {
-  //       "geoId": 293928,
-  //       "sort": "POPULARITY",
-  //       "sortOrder": "asc"
-  //     }
-  //   })
-  //   .then(res => {
-  //     if (!res.ok) {
-  //       throw Error("Serverda ma'lumot olishda xatolik!!");
-  //     }
-  //     console.log(res);
-  //     return res.json();
-  //   })
-  //   .then((data) => {
-  //     console.log(data);
-  //     setDestination(data);
-  //   })
-  //   .catch(err => {
-  //     setError(err.message);
-  //     console.error(err);
-  //   });
-  // });
+    useEffect(() => {
+    // fetch("https://cities-cost-of-living1.p.rapidapi.com/get_cities_list", {
+    //   "method": "GET",
+    //   "headers": {
+    //     "x-rapidapi-host": "cities-cost-of-living1.p.rapidapi.com",
+    //     "x-rapidapi-key": "0d44b34b09msh11dc77b8f1a2d7cp1e6176jsn49718d676727"
+    //   }
+    // })
+    // .then(res => {
+    //   if (!res.ok) {
+    //     throw Error("Serverda ma'lumot olishda xatolik!!");
+    //   }
+    //   console.log(res);
+    //   return res.json();
+    // })
+    // .then((data) => {
+    //   console.log(data);
+    //   setDestination(data);
+    // })
+    // .catch(err => {
+    //   setError(err.message);
+    //   console.error(err);
+    // });
+    fetch("https://cities-cost-of-living1.p.rapidapi.com/get_cities_details", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-host": "cities-cost-of-living1.p.rapidapi.com",
+		"x-rapidapi-key": "0d44b34b09msh11dc77b8f1a2d7cp1e6176jsn49718d676727"
+	},
+	"body": {
+		"cities": "[{\"name\":\"Lisbon\",\"country\":\"Portugal\"},{\"name\":\"Paris\",\"country\":\"Spain (wrong country)\"},{\"name\":\"Hamilton\",\"country\":\"Bermuda\"},{\"name\":\"Saint Francisc (wrong city name)\",\"country\":\"United States\"}]",
+		"currencies": "[\"Euro (wrong currency code)\",\"USD\",\"CHF\"]"
+	}
+})
+.then(res => res.json()).then(data => { console.log(data)})
+.catch(err => {
+	console.error(err);
+}, []);
+  });
+
+
+//   fetch("https://cities-cost-of-living1.p.rapidapi.com/get_cities_list", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "cities-cost-of-living1.p.rapidapi.com",
+// 		"x-rapidapi-key": "0d44b34b09msh11dc77b8f1a2d7cp1e6176jsn49718d676727"
+// 	}
+// })
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
 
   return (
     <div className="popular__destinations">

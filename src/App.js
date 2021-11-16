@@ -14,15 +14,25 @@ import Hotels from "./pages/Hotels";
 import GoogleMap from "./pages/GoogleMap";
 import HotelInfo from './pages/HotelInfo';
 import 'swiper/swiper-bundle.css';
+import Dashboard from "./pages/Dashboard";
+import AddRestaurants from "./pages/AddRestaurants";
+import AddHotels from "./pages/AddHotels";
 
 
 function App() {
+  
   return (
     <div className="wrapper">
       <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+
+          <Route path="/add-hotels" element={<AddHotels />} />
+
+          <Route path="/add-restaurants" element={<AddRestaurants />} />
+
+          <Route path="/dashboard" element={<Dashboard />} />
 
           <Route path="/my-trips" element={<MyTrips />} />
 

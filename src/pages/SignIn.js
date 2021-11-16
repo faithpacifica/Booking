@@ -7,7 +7,7 @@ const SignIn = () => {
         <div className='signIn-page'>
             <div className='signIn-form'>
                 <h2 className='signIn-form__title'>Sign In With</h2>
-                <form className='site-login-form'>
+                <form className='site-login-form'  > {/*TODO:formga qaytarish */}
                     <div className='login-form'>
                         <Link className='login-form__link login-form__link_face' to='/'><i className="fab fa-facebook-square"></i>Facebook</Link>
                         <Link className='login-form__link login-form__link_google' to='/'><img className='google-image' src='img/icon-google.png' alt='GOOGLE' />Google</Link>
@@ -20,7 +20,8 @@ const SignIn = () => {
                         <button className='login-communication__btn' type='submit'>Sign In</button>
                         <div className='login-help'>
                             <span className='login-help__text'>Not a member?</span>
-                            <Link className='login-help__link' to='/'>Sign up now</Link>
+                            <Link className='login-help__link' to='/dashboard'>Sign up now</Link> {/*TODO:button ichiga link ulen*/}
+                           
                         </div>
                     </div>
                 </form>

@@ -3,7 +3,7 @@ import './SingleHotelsCard.css'
 // import { Rating } from '@material-ui/Rating';{/*TODO:ISHLAMADI */}
 
 
-// https://travel-advisor.p.rapidapi.com/hotels/list-by-latlng?latitude=12.91285&longitude=100.87808&lang=en_US&hotel_class=1%2C2%2C3&limit=30&adults=1&amenities=beach%2Cbar_lounge%2Cairport_transportation&rooms=1&child_rm_ages=7%2C10&currency=USD&checkin=2020-01-08&zff=4%2C6&subcategory=hotel%2Cbb%2Cspecialty&nights=2
+// https://travel-advisor.p.rapidapi.com/hotels/list-by-latlng?latitude=12.91285&longitude=100.87808&lang=en_US&hotel_className=1%2C2%2C3&limit=30&adults=1&amenities=beach%2Cbar_lounge%2Cairport_transportation&rooms=1&child_rm_ages=7%2C10&currency=USD&checkin=2020-01-08&zff=4%2C6&subcategory=hotel%2Cbb%2Cspecialty&nights=2
 
 
 const SingleHotelsCard = ({ singlehotelobj }) => {
@@ -33,10 +33,10 @@ const SingleHotelsCard = ({ singlehotelobj }) => {
                         <span className='single-secondary-data__class'>{singlehotelobj.hotel_class > 1 ? singlehotelobj.hotel_class : ''}</span>
                         <Link className='single-secondary-data__link' to='/'>{singlehotelobj.num_reviews}</Link>
                         <div className='single-icons'>
-                            <i class="fas fa-wifi"></i><span className='single-icons__text'>Free WiFi</span>
+                            <i className="fas fa-wifi"></i><span className='single-icons__text'>Free WiFi</span>
                         </div>
                         <div className='single-icons'>
-                            <i class="fas fa-parking"></i><span className='single-icons__text'>Free Parking</span>
+                            <i className="fas fa-parking"></i><span className='single-icons__text'>Free Parking</span>
                         </div>
                     </div>
                 </div>

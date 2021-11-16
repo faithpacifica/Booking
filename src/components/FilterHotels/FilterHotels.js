@@ -1,10 +1,34 @@
 import React from "react";
 import "./FilterHotels.css";
 import Checkbox from "@material-ui/core/Checkbox";
+// import {useEffect} from 'react';
+
+
 
 const FilterHotels = () => {
-  // TODO:Class larini tugirlash
+ 
+  // useEffect(() =>{
+  //     fetch(`https://booking-com.p.rapidapi.com/v1/hotels/search-filters?units=metric&filter_by_currency=AED&locale=en-gb&order_by=popularity&checkin_date=2022-05-09&checkout_date=2022-05-10&dest_type=city&dest_id=-553173&adults_number=2&room_number=1&page_number=0&include_adjacency=true&categories_filter_ids=class%3A%3A2%2Cclass%3A%3A4%2Cfree_cancellation%3A%3A1", {
+  //       "method": "GET",
+  //       "headers": {
+  //         "x-rapidapi-host": "booking-com.p.rapidapi.com",
+  //         "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6` )
+  // .then(response => {
+  //   return response.json()
+  // })
+  // .then(data => {
+  //   console.log(data)
+  // })
+  // .catch(err => {
+  //   console.error(err);
+  // });
+
+  // }, [])
+
+
+
   return (
+     // TODO:Class larini tugirlash 
     <div className="filter-hotels">
       <div className="container filter-container">
         <div className="left-column-wrapper left-column">
@@ -12,44 +36,35 @@ const FilterHotels = () => {
 
           <hr />
           <h4 className="star-rating">Star Rating</h4>
+
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox  inputProps={{ "aria-label": "uncontrolled-checkbox" }} />
               <span className="star-box-text">5 stars</span>
             </div>
-            <div>
-              <span className="star-box-result">34</span>
-            </div>
+            <div><span className="star-box-result">34</span> </div>
           </div>
+
           <div className="star-box">
-            <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+            <div><Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }} />
               <span className="star-box-text">4 stars</span>
             </div>
             <div>
               <span className="star-box-result">70</span>
             </div>
           </div>
+
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox  inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">3 stars</span>
             </div>
-            <div>
-              <span className="star-box-result">90</span>
-            </div>
+            <div> <span className="star-box-result">90</span> </div>
           </div>
+
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">2 stars</span>
             </div>
             <div>
@@ -61,17 +76,13 @@ const FilterHotels = () => {
           <h4 className="star-rating">Deals</h4>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox  inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Free cancellation </span>
             </div>
           </div>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Reserve now, pay at stay </span>
             </div>
           </div>
@@ -84,9 +95,7 @@ const FilterHotels = () => {
           <h4 className="star-rating">Property Type</h4>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Hotels</span>
             </div>
             <div>
@@ -95,9 +104,7 @@ const FilterHotels = () => {
           </div>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Apartments</span>
             </div>
             <div>
@@ -106,9 +113,7 @@ const FilterHotels = () => {
           </div>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Hostels</span>
             </div>
             <div>
@@ -130,9 +135,7 @@ const FilterHotels = () => {
           <h4 className="star-rating">Review Score</h4>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Wonderful:9+ </span>
             </div>
             <div>
@@ -141,9 +144,7 @@ const FilterHotels = () => {
           </div>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Very Good:8+</span>
             </div>
             <div>
@@ -152,9 +153,7 @@ const FilterHotels = () => {
           </div>
           <div className="star-box">
             <div>
-              <Checkbox
-                inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-              />
+              <Checkbox  inputProps={{ "aria-label": "uncontrolled-checkbox" }}/>
               <span className="star-box-text">Good:7+ </span>
             </div>
             <div>

@@ -11,8 +11,8 @@ const Map = () => {
       <Grid item xs={9}  >
         <div className="map-inner-wrapper">
             < img className="map-img"  src="/../img/googlemap.jpg" alt="google map" />
-            <button class="ui_button secondary">
-            <i class="fas fa-map-marker-alt"></i><span> View map</span>
+            <button className="ui_button secondary">
+            <i className="fas fa-map-marker-alt"></i><span> View map</span>
             </button>
         </div>
          
