@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const ListingToolbar = () => {
     return (
         <div>
-           <Link to='/add-hotels'> <AddHotels /></Link>
-           <Link to='/add-restaurants'><AddRestaurants /> </Link>
+           <Link to='/add-hotels'> add hotels</Link>
+           <Link to='/add-restaurants'>add restaurants </Link>
         </div>
     );
 };

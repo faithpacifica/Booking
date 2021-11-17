@@ -1,8 +1,11 @@
 import React from 'react';
+import {useLocation} from 'react-router-dom'
 import { Link } from "react-router-dom";
 import './SignIn.css';
 
 const SignIn = () => {
+    let url = useLocation();
+    console.log(url);
     return (
         <div className='signIn-page'>
             <div className='signIn-form'>
@@ -20,7 +23,7 @@ const SignIn = () => {
                         <button className='login-communication__btn' type='submit'>Sign In</button>
                         <div className='login-help'>
                             <span className='login-help__text'>Not a member?</span>
-                            <Link className='login-help__link' to='/dashboard'>Sign up now</Link> {/*TODO:button ichiga link ulen*/}
+                            <Link className='login-help__link' to='/dashboard'>Sign up now</Link> 
                            
                         </div>
                     </div>
