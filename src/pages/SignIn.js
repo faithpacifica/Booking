@@ -1,9 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-=======
-import {useLocation} from 'react-router-dom'
-import { Link } from "react-router-dom";
->>>>>>> c8ad0e83445ad91c50237a2ecae97ad8f3053545
 import './SignIn.css';
 import { Link } from 'react-router-dom';
 
