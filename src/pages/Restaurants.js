@@ -3,8 +3,9 @@ import Grid from '@material-ui/core/Grid';
 import SubNavbar from "../components/Subnavbar/SubNavbar";
 import Map from "../components/Map/Map";
 import FilterRestaurants from "../components/FilterRestaurants/FilterRestaurants";
-import SingleRestaurantCard from "../components/SingleRestaurantCard/SingleRestaurantCard";
+import SingleRestaurant from "../components/SingleRestaurantCard/SingleRestaurant";
 import "./Restaurants.css";
+
 
 const Restaurants = () => {
   return (
@@ -22,7 +23,7 @@ const Restaurants = () => {
         <div className="restaurant_page_heading">
         <h1 className="restaurant_page_heading"><span>Tashkent</span> Restaurant</h1>
         </div>
-      <SingleRestaurantCard />
+      <SingleRestaurant />
       </Grid>
 
       </Grid> 
