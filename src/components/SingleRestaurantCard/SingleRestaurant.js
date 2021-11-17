@@ -11,7 +11,7 @@ const getApiOptions = {
   "method": "GET",
   "headers": {
     "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-    "x-rapidapi-key": "96d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
+    "x-rapidapi-key": "096d09624a0mshd17f2815dd604b3p14595fjsn42f8a22763f6"
   }
 
 };
