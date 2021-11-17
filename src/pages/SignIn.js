@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 
 const SignIn = () => {
-    let url = useLocation();
-    console.log(url);
+    // let url = useLocation();
+    // console.log(url);
     return (
         <div className='signIn-page'>
             <div className='signIn-form'>
