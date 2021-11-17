@@ -14,7 +14,7 @@ import Hotels from "./pages/Hotels";
 import GoogleMap from "./pages/GoogleMap";
 import HotelInfo from './pages/HotelInfo';
 import 'swiper/swiper-bundle.css';
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard"
 import AddRestaurants from "./pages/AddRestaurants";
 import AddHotels from "./pages/AddHotels";
 
