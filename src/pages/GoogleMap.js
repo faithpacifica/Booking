@@ -7,6 +7,8 @@ import MapBody from '../components/MapBody/MapBody';
 
 
 const GoogleMap = () => {
+   
+   
     return (
         <div className='container'>
             
