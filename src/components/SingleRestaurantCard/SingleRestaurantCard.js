@@ -27,10 +27,9 @@ const SingleRestaurantCard = ({resobj}) => {
                         <div className='singleRestaurant-card__secondary'>  
                         <span className='singleRestaurant-card__price'>{resobj.price ? resobj.price : <p className="restaurant-card__reyting">$$-$$$</p>}</span>
                         <Stack spacing={1}>
-                       <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />  
-                       
+                       <Rating name="half-rating-read" defaultValue={resobj.rating} precision={0.5} readOnly />   
                        </Stack>
-                       <div className='singleRestaurant-card__rating'>{resobj.rating}</div>
+  
                        <p>{resobj.open_now_text}</p>                        
                        </div>
                         <p className='singleRestaurant-card__type'>{mappedCuisine}</p>
